@@ -7,7 +7,7 @@ const roomDiv = document.getElementById("room-name");
 const usernameDiv = document.getElementById("username"); 
 
 roomDiv.innerHTML = `Room: <strong>${room}</strong>`;
-usernameDiv.innerHTML = `Hello: ${username}`;
+usernameDiv.innerHTML = `Hello: <strong> ${username} </strong> `;
 
 
 sockect.emit("selected_room", {
@@ -48,7 +48,9 @@ function createMessage(data){
     messageContainer.innerHTML += `
         <div class="new-message">
             <label class="form-label">
-                <strong>${data.username}</strong> <span> ${data.text} <br>  ${dayjs(data.createdAt).format("DD/MM HH:mm")}</span>
+            <strong>${data.username}</strong>
+                 <span> ${data.text}</span><br/>
+                 <span style="text-align: end;">${dayjs(data.createdAt).format("DD/MM HH:mm")}</span>
             </label>
         </div>
     `;
