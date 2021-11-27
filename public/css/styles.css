@@ -143,11 +143,14 @@ main {
 .message-content .messages .new-message label {
     display: flex;
     flex-direction: column;
+    background-color: #dcdcdc98;
+    margin: 10px;
+    padding: 5px;
 }
 
 .message-content .messages .new-message label strong{
     font-size: 14px;
-    margin: 10px 5px;
+    margin: 5px 5px;
 }
 
 .message-content .messages .new-message label span{
