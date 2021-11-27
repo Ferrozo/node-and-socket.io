@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Talking</title>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="login-field">
+                <form action="chat.html">
+                    <div class="class-selection">
+                        <select name="select_room" id="select_room">
+                            <option value="1">select room</option>
+                            <option value="javascript">JavaScript</option>
+                            <option value="typeScript">TypeScript</option>
+                            <option value="python">Python3</option>
+                            <option value="react">ReactJS</option>
+                            <option value="node">NodeJS</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label class="form-label">username</label>
+                    </div>
+                    <input type="text" name="username" placeholder="Enter username" id="">
+                    <button type="submit" onclick="createMessage()">Enter &rarr;</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

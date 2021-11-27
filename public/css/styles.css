@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 15px;
+}
+
+.login-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 100px auto;
+    padding: 40px;
+    width: 280px;
+    height: 400px;
+    border: 1px solid #c5c5c5;
+    border-radius: 15px;
+    box-shadow: 0 0 2px 2px  #d4d4d48f;
+}
+
+.class-selection {
+    margin: 20px 5px;
+    width: 90%;
+    
+}
+
+.class-selection select{
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    color: #333;
+    padding: 5px 10px;
+    border: 1px solid #c5c5c5;
+    border-radius: 5px;
+    background-color: #41ca94;
+}
+
+.login-field form div {
+    display: flex;
+    width: 100%;
+    padding: 0 12px;
+    color: #696969;
+}
+
+.login-field form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-field form input{
+    margin: 15px 0;
+    height: 40px;
+    font-size: 14px;
+    color: #333;
+    outline: 0;
+    padding: 5px 15px;
+    border: .5px solid #c9c9c9;
+    border-radius: 3px;
+    width: 90%;
+    box-shadow: 0 0 3px 3px  #d4d4d48f;
+    
+}
+
+
+.login-field form button{
+    width: 90%;
+    height: 40px;
+    background-color: #ee6d69;
+    color: rgb(240, 240, 240);
+    font-weight: 500;
+    font-size: 16px;
+    border: 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.login-field form button:hover{
+    background-color: #c55955;
+}
+
+/* -------------------------------------------------------- */
+
+.chat-field {
+    position: relative;
+    box-shadow: 0 0 2px 2px  #d4d4d4b6;
+    min-width: 320px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 450px;
+}
+
+.chat-header {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 1px solid #69696952;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #696969;
+    border-bottom: .5px solid #c5c5c5;
+    
+}
+
+.chat-header .logout-btn button{
+    width: 60px;
+    font-size: 14px;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    height: 30px;
+    background-color: #ee6d69;
+    cursor: pointer;
+}
+
+.chat-header .logout-btn button:hover{
+    background-color: #c55955;
+}
+
+.header-username {
+    font-size: 14px;
+    padding: 15px 10px;
+}
+
+.message-content {
+    overflow-y: scroll;
+    max-height: 250px;
+    font-size: 14px;
+    padding: 15px 10px;
+}
+
+.message-content .messages .new-message label {
+    display: flex;
+    flex-direction: column;
+}
+
+.message-content .messages .new-message label strong{
+    font-size: 14px;
+    margin: 10px 5px;
+}
+
+.message-content .messages .new-message label span{
+    display: flex;
+    font-size: 12px;
+    margin: 2px 10px;
+    max-width: 250px;
+}
+
+
+
+.message-input-field {
+    position: absolute;
+    bottom: 0;
+    margin: 100px 15px 0px 15px;
+    margin-top: 15px;
+    display: flex;
+    padding: 10px 0px;
+    
+}
+
+.message-input-field input {
+    height: 45px;
+    font-size: 14px;
+    flex: 1;
+    outline: 0;
+    padding: 10px;
+    border: .5px solid #c9c9c9;
+    color: #333;
+}
+
+.message-input-field button {
+    height: 45px;
+    font-size: 14px;
+    font-weight: 500;
+    width: 70px;
+    background-color: #41ca94;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius: 3px;
+}
+
+.message-input-field button:hover{
+    background-color: #37b180;   
+}

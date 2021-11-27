@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Talking</title>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="chat-field">
+                <div class="chat-header">
+                    <div class="room-name" id="room-name">
+                        <h5>Room name</h5>
+                    </div>
+                    <div class="logout-btn" id="logout-btn">
+                        <button >logout</button>
+                    </div>
+                </div>
+                <div class="header-username" >
+                    <p id="username"></p>
+                </div>
+                <div class="message-content">
+                    <div class="messages" id="messages">
+                        <!-- <div class="new-message">
+                            <label class="form-label">
+                                <strong>username</strong> <span>text - 26/11 04:03</span>
+                            </label>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="message-input-field">
+                    <input class="form-control" name="" id="message_input" placeholder="Type your message" />
+                    <button type="submit" id="btn_sender" name="sender">Send &rarr;</button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.7/dayjs.min.js" integrity="sha512-bwD3VD/j6ypSSnyjuaURidZksoVx3L1RPvTkleC48SbHCZsemT3VKMD39KknPnH728LLXVMTisESIBOAb5/W0Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/chat.js"></script>
+</body>
+</html>
